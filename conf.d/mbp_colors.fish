@@ -1,4 +1,9 @@
 set mbp_color_pink EE7777
 set mbp_color_gold EECC11
+set mbp_color_orange C76D14
 set mbp_color_autumn E58844
 set mbp_color_cream F6DF9E
+set mbp_color_red A83832
+set mbp_color_sky 3275A8
+set mbp_color_blue 0C538A
+set mbp_color_teal 14C785
