@@ -9,10 +9,12 @@
 # mbp_color_teal 14C785
 
 function fish_prompt
-    if test $hostname = boisonberry
+    if test $hostname = marion
         fish_prompt_boisonberry
-    else if test $hostname = ahslocal
+    else if test $hostname = rumcake
         fish_prompt_work
+    else if test $hostname = pancake
+        fish_prompt_og
     else
         fish_prompt_default
     end
