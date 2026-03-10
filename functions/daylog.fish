@@ -1,3 +1,3 @@
 function daylog
-/home/nicholas/daylog/daylog.py $argv
+/home/admin/daylog/daylog/daylog.py $argv
 end

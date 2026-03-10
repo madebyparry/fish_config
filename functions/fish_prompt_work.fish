@@ -11,24 +11,24 @@
 #
 # from my custom prompt for work
 function fish_prompt_work
-    set -l git_branch (git branch 2>/dev/null | sed -n '/\* /s///p')
 
-    # set_color $mbp_color_cream
-    # echo -n (whoami)
     set_color $mbp_color_orange
-    echo -n '⛬  '
-    set_color $mbp_color_cream
-    echo -n AHS-
-    # set_color $mbp_color_orange
-    # echo -n ' ⛬  '
-    # echo -n ' ❯❯ '
+    if test (whoami) != "nicholas"
+	    echo -n (whoami)
+    else
+	    echo -n "⛬ "
+    end
+
     set_color $mbp_color_gold
     echo -n (date +%H:%M)' '
-    # echo -n (hostname)' '
+
     set_color $mbp_color_orange
     echo -n '['(prompt_pwd)']'
+
+    set -l git_branch (git branch 2>/dev/null | sed -n '/\* /s///p')
     set_color $mbp_color_cream
     echo -n ' {'
     echo -n "$git_branch"
     echo -n '} '
+
 end
